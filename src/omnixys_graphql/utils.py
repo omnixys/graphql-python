@@ -22,7 +22,7 @@ def create_context_getter() -> Callable[..., dict[str, Any]]:
             "dishka": dishka_container,
         }
 
-    return get_context
+    return get_context  # type: ignore[return-value]
 
 
 def create_graphql_router(
@@ -38,7 +38,7 @@ def create_graphql_router(
         path=path,
         graphiql=graphiql,
         allow_queries_via_get=allow_queries_via_get,
-        context_getter=create_context_getter(),
+        context_getter=create_context_getter(),  # type: ignore[arg-type]
         process_error=format_graphql_error,
         **kwargs,
     )
