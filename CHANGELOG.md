@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/omnixys/graphql-python/compare/v2.0.1...v2.0.2) (2026-07-22)
+
+
+### Bug Fixes
+
+* **release:** add @semantic-release/exec to update __version__ in __init__.py ([5e4058e](https://github.com/omnixys/graphql-python/commit/5e4058e81cf5609670d1738947de373221298ed7))
+
 ## [2.0.1](https://github.com/omnixys/graphql-python/compare/v2.0.0...v2.0.1) (2026-07-22)
 
 
