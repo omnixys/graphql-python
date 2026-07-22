@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/omnixys/graphql-python/compare/v2.0.3...v2.0.4) (2026-07-22)
+
+
+### Bug Fixes
+
+* **publish:** add uv build before uv publish ([b37e972](https://github.com/omnixys/graphql-python/commit/b37e97235056518f14be9be3eb77f3626fb0d404))
+
 ## [2.0.3](https://github.com/omnixys/graphql-python/compare/v2.0.2...v2.0.3) (2026-07-22)
 
 
