@@ -18,7 +18,7 @@ pip install omnixys-graphql
 ## Usage
 
 ```python
-from omnixys_graphql import create_graphql_router, GraphQLServiceError
+from graphql import create_graphql_router, GraphQLServiceError
 ```
 
 ## License

@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, Any
 
 from strawberry.fastapi import GraphQLRouter
 
-from omnixys_graphql.errors import format_graphql_error
+from graphql.errors import format_graphql_error
 
 if TYPE_CHECKING:
     from collections.abc import Callable
