@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/omnixys/graphql-python/compare/v2.0.2...v2.0.3) (2026-07-22)
+
+
+### Bug Fixes
+
+* **publish:** replace gh release upload with uv publish to PyPI ([b148bc1](https://github.com/omnixys/graphql-python/commit/b148bc131017261b3031e3aa6dc5b7633a97f250))
+
 ## [2.0.2](https://github.com/omnixys/graphql-python/compare/v2.0.1...v2.0.2) (2026-07-22)
 
 

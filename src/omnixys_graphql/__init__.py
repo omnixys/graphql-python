@@ -3,7 +3,7 @@ from omnixys_graphql.errors import GraphQLServiceError, format_graphql_error, to
 from omnixys_graphql.pagination import PageInput, PagePayload
 from omnixys_graphql.utils import create_context_getter, create_graphql_router, include_graphql_router
 
-__version__ = "2.0.2"
+__version__ = "2.0.3"
 
 __all__ = [
     "GraphQLProvider",
