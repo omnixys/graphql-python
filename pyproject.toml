@@ -2,16 +2,26 @@
 name = "omnixys-graphql"
 dynamic = ["version"]
 description = "Omnixys shared GraphQL package (Apollo Federation, error handling, pagination)"
+readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
 requires-python = ">=3.14"
+authors = [{ name = "Omnixys Team", email = "team@omnixys.com" }]
+keywords = ["omnixys", "graphql", "strawberry", "apollo-federation", "api"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3.14",
+    "Typing :: Typed",
+]
 dependencies = [
-  "strawberry-graphql[fastapi]>=0.316.0",
-  "dishka>=1.10.0",
+    "strawberry-graphql[fastapi]>=0.316.0",
+    "dishka>=1.10.0",
 ]
 
-authors = [
-  {name = "Omnixys Team", email = "team@omnixys.com"},
-]
+[project.urls]
+Homepage = "https://github.com/omnixys/omnixys"
+Repository = "https://github.com/omnixys/omnixys"
 
 [build-system]
 requires = ["hatchling"]
@@ -19,6 +29,17 @@ build-backend = "hatchling.build"
 
 [tool.hatch.version]
 path = "src/omnixys_graphql/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/omnixys_graphql"]
+
+[dependency-groups]
+dev = [
+    "mypy>=2.3.0",
+    "ruff>=0.15.21",
+    "pytest>=9.1.0",
+    "pytest-asyncio>=0.26.0",
+]
 
 [tool.ruff]
 line-length = 120
@@ -29,14 +50,14 @@ select = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = [
-  "ANN101", "ANN401", "S101",
-  "T20", "FBT", "D", "INP001",
+    "ANN101", "ANN401", "S101",
+    "T20", "FBT", "D", "INP001",
 ]
 "src/**" = [
-  "D", "ANN401", "ARG002", "S104", "S105",
+    "D", "ANN401", "ARG002", "S104", "S105",
 ]
 "src/omnixys_graphql/errors.py" = [
-  "EM101", "EM102",
+    "EM101", "EM102",
 ]
 
 [tool.mypy]
@@ -46,11 +67,3 @@ ignore_missing_imports = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
-
-[dependency-groups]
-dev = [
-    "mypy>=2.3.0",
-    "ruff>=0.15.21",
-    "pytest>=9.1.0",
-    "pytest-asyncio>=0.26.0",
-]
