@@ -4,8 +4,6 @@ from typing import TYPE_CHECKING, Any
 
 from strawberry.fastapi import GraphQLRouter
 
-from graphql.errors import format_graphql_error
-
 if TYPE_CHECKING:
     from collections.abc import Callable
 
@@ -36,10 +34,9 @@ def create_graphql_router(
     return GraphQLRouter(
         schema=schema,
         path=path,
-        graphiql=graphiql,
+        graphql_ide="graphiql" if graphiql else None,
         allow_queries_via_get=allow_queries_via_get,
         context_getter=create_context_getter(),  # type: ignore[arg-type]
-        process_error=format_graphql_error,
         **kwargs,
     )
 
