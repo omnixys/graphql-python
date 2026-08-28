@@ -16,7 +16,7 @@ Omnixys shared GraphQL package (Apollo Federation, error handling, pagination).
 
 ## Architecture
 
-src/graphql/ federation support, error handling, pagination
+src/omnixys_graphql/ federation support, error handling, pagination
 
 ## Database, APIs and Messaging
 

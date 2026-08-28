@@ -11,7 +11,7 @@
 - Package: `omnixys-graphql` (version: dynamic)
 - Runtime: Python >=3.14 (uv)
 - Description: Omnixys shared GraphQL package (Apollo Federation, error handling, pagination).
-- Architecture: src/graphql/ federation support, error handling, pagination
+- Architecture: src/omnixys_graphql/ federation support, error handling, pagination
 - Database: n/a; Migrations: n/a
 - API: n/a
 - Messaging: n/a
@@ -50,6 +50,13 @@ FAILURE`, or `NOT RUN` (with a reason). Never convert `NOT RUN` into `PASS`.
   - `uv run mypy src/`
   - `uv run pytest`
   - `uv build (hatchling)`
+
+## Release
+
+- Pushes to `main` run Semantic Release after validation.
+- Semantic Release updates the package version, creates the release commit, and tags it as `v<version>`.
+- PyPI publishing must build exclusively from that generated release tag so package metadata matches the GitHub release.
+- Release and publish failures must fail the workflow; they must not be silently ignored.
 
 ## Commit
 
