@@ -53,7 +53,6 @@ from omnixys_graphql.extensions import GraphQLFormatErrorExtension
 from omnixys_graphql.pagination import PageInput, PagePayload
 from omnixys_graphql.utils import create_context_getter, create_graphql_router, include_graphql_router
 
-
 __all__ = [
     "ERROR_CATALOG_VERSION",
     "ERROR_CODES",
