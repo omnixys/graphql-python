@@ -1,3 +1,44 @@
+# 🧾 Changelog
+
+All notable changes in this project will be documented in this file.
+
+
+## [3.0.0](https://github.com/omnixys/graphql-python/compare/v2.0.4...v3.0.0) (2026-09-02)
+
+### Agent
+
+* **Agent:** add repository development instructions ([](https://github.com/omnixys/graphql-python/commit/de07f6d2a8371b97d428a0e2922d048e522cb54c))
+
+### Ci
+
+* **Ci:** comment out PyPI publish job ([](https://github.com/omnixys/graphql-python/commit/0c8ae785ae0d1ff7be4e14ef1fdb86604651f1bd))
+* **Ci:** add setup-uv to release job for uv lock in prepare cmd ([](https://github.com/omnixys/graphql-python/commit/8a35e8efa7245a18e4f8685062fb64074426391a))
+* **Ci:** bundle semantic-release tool install to fix conventional-changelog-writer ([](https://github.com/omnixys/graphql-python/commit/a95dec7e477ca211a7ef9d6421f642ad9eeffcf7))
+* **Ci:** pin conventional-changelog-conventionalcommits to v9 for release-notes-generator compat ([](https://github.com/omnixys/graphql-python/commit/7202a12a048b71c89f3e94f8b314b0333acf6738))
+* **Ci:** publish tagged release to PyPI ([](https://github.com/omnixys/graphql-python/commit/7fbd1356d42aa95d9e0271d9439ded797619ecbf))
+* **Ci:** remove stray comma from releaseBodyTemplate ([](https://github.com/omnixys/graphql-python/commit/989bae36f7c71594e15eaf3d57826b357f293e40))
+
+### Deps
+
+* **Deps:** update omnixys deps ([](https://github.com/omnixys/graphql-python/commit/cce6cf563f3e31a7a474ede4d196b6869f564d9f))
+
+### Dir
+
+* **Dir:** remove target dir ([](https://github.com/omnixys/graphql-python/commit/ec5c7dfe77d36192120965edf44837e0a137edb9))
+
+### Other
+
+* **Other:** Merge pull request #1 from omnixys/migration/uuid-v7 ([](https://github.com/omnixys/graphql-python/commit/d4e4887bb9a48eb58bca47fce22f8cd2059db502)), closes [#1](https://github.com/omnixys/graphql-python/issues/1)
+
+### Packaging
+
+* **Packaging:** fix ruff lint and version metadata tests ([](https://github.com/omnixys/graphql-python/commit/03825a105858ef30921f052d8b01bfa57b122e16))
+* **Packaging:** move package version to pyproject.toml and align release workflow ([](https://github.com/omnixys/graphql-python/commit/3ff9222ce258ebe3113a56ec87836dbec51e5c0e))
+
+### Publish
+
+* **Publish:** publish package ([](https://github.com/omnixys/graphql-python/commit/e82dee622b279175f5365176db5518658d937bc7))
+
 ## [2.0.4](https://github.com/omnixys/graphql-python/compare/v2.0.3...v2.0.4) (2026-07-22)
 
 
