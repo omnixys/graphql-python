@@ -1,6 +1,6 @@
 [project]
 name = "omnixys-graphql"
-dynamic = ["version"]
+version = "2.0.3"
 description = "Omnixys shared GraphQL package (Apollo Federation, error handling, pagination)"
 readme = "README.md"
 license = { text = "GPL-3.0-or-later" }
@@ -27,8 +27,6 @@ Repository = "https://github.com/omnixys/omnixys"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.hatch.version]
-path = "src/omnixys_graphql/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/omnixys_graphql"]
