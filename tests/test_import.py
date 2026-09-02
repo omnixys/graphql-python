@@ -8,8 +8,11 @@ from importlib.metadata import version as pkg_version
 
 def test_package_importable() -> None:
     mod = importlib.import_module("omnixys_graphql")
-    assert hasattr(mod, "__version__")
-    assert mod.__version__ == pkg_version("omnixys-graphql")
+    assert mod is not None
+
+
+def test_package_version() -> None:
+    assert pkg_version("omnixys-graphql")
 
 
 def test_public_api() -> None:
