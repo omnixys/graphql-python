@@ -3,6 +3,12 @@
 All notable changes in this project will be documented in this file.
 
 
+## [3.0.1](https://github.com/omnixys/graphql-python/compare/v3.0.0...v3.0.1) (2026-09-19)
+
+### Deps
+
+* **Deps:** update omnixys deps ([](https://github.com/omnixys/graphql-python/commit/987d4d8befa84483ccbf14f0a55b7a89e8870400))
+
 ## [3.0.0](https://github.com/omnixys/graphql-python/compare/v2.0.4...v3.0.0) (2026-09-02)
 
 ### Agent

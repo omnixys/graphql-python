@@ -227,7 +227,7 @@ wheels = [
 
 [[package]]
 name = "omnixys-graphql"
-version = "3.0.0"
+version = "3.0.1"
 source = { editable = "." }
 dependencies = [
     { name = "dishka" },
